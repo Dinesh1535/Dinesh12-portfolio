@@ -126,4 +126,4 @@ Dinesh12-portfolio/
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) — feel free to use it as inspiration for your own portfolio.
+This project is licensed under the [MITE License](LICENSE) — feel free to use it as inspiration for your own portfolio.
