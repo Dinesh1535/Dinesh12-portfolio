@@ -50,9 +50,11 @@ Start-Process .\index.html
   - *Full Stack & Backend*
   - *API Automation & QA*
   - *AI & Deep Learning*
-- **Timeline Career History:** Detailed responsibilities and impact from industry internships (Fintech API Automation & Full-Stack Systems).
+- **Timeline Career History:** Detailed responsibilities and impact from industry internships (Fintech API Automation & Full-Stack Systems) with completed tenure dates (Apr 2026 – Oct 2026) and inline verified experience letter attachment.
+- **Certifications & Experience Letters Section:** Dedicated showcase for official corporate experience letters and degree credentials, featuring high-resolution preview cards, official company seal, and direct PDF downloads.
+- **Interactive Document Lightbox Modal:** Full-screen zoomable viewer displaying official documents (e.g. Seamless Private Limited Experience Certificate) with detailed metadata and download actions.
 - **Categorized Technical Skills:** Tech badges grouped into 6 engineering disciplines with official vector logos and local icon assets.
-- **Interactive Resume Modal:** Allows recruiters to preview key resume highlights and initiate an email inquiry or call with a single click.
+- **Interactive Resume Modal:** Allows recruiters to preview key resume highlights, verify attached experience letters, and initiate contact with a single click.
 - **Reliable SVG Icons:** Inline SVG glyphs for critical social links (GitHub, LinkedIn, Email, Phone) guaranteeing zero broken icons or font-loading tofu boxes (`□`).
 - **Validated Contact Form:** Client-side email and required fields validation with a modern toast feedback notification.
 - **Fully Responsive:** Smooth navigation on desktop, tablet, and mobile devices with a slide-out drawer menu.
@@ -77,21 +79,24 @@ Start-Process .\index.html
 ```text
 Dinesh12-portfolio/
 │
-├── index.html         # Main portfolio markup & semantic structure
-├── style.css          # Design system, glassmorphism tokens, and responsive queries
-├── script.js          # Interactive behaviors (modal, filters, scrollspy, contact toast)
-├── README.md          # Comprehensive repository documentation
+├── index.html                           # Main portfolio markup & semantic structure
+├── style.css                            # Design system, glassmorphism tokens, and responsive queries
+├── script.js                            # Interactive behaviors (modals, filters, scrollspy, toast)
+├── README.md                            # Comprehensive repository documentation
 │
-├── main.jpeg          # Hero profile image
-├── main1.jpeg         # About section portrait image
+├── seamless-internship-certificate.jpg  # High-res official experience certificate (Seamless)
+├── seamless-internship-certificate.pdf  # Downloadable official experience certificate PDF
 │
-├── python.png         # Skill badge icon: Python
-├── js.png             # Skill badge icon: JavaScript
-├── html.png           # Skill badge icon: HTML5
-├── css.png            # Skill badge icon: CSS3
-├── sql.png            # Skill badge icon: SQL
-├── mysql.png          # Skill badge icon: MySQL
-└── vsc.png            # Skill badge icon: Visual Studio Code
+├── main.jpeg                            # Hero profile image
+├── main1.jpeg                           # About section portrait image
+│
+├── python.png                           # Skill badge icon: Python
+├── js.png                               # Skill badge icon: JavaScript
+├── html.png                             # Skill badge icon: HTML5
+├── css.png                              # Skill badge icon: CSS3
+├── sql.png                              # Skill badge icon: SQL
+├── mysql.png                            # Skill badge icon: MySQL
+└── vsc.png                              # Skill badge icon: Visual Studio Code
 ```
 
 ---
@@ -115,7 +120,7 @@ Dinesh12-portfolio/
 ## 👨‍💻 About Arencheruvu Dinesh
 
 - **Role:** Software Engineer (REST APIs, Backend & Automation)
-- **Location:** Bangalore, India *(Hometown: Anantapur)*
+- **Location:** Bangalore, India *(Hometown: Anantapur,Andhra Pradesh)*
 - **Education:** Bachelor of Engineering in Computer Science & Engineering (Mangalore Institute of Technology & Engineering, 2020 – 2024, CGPA: 6.88)
 - **Email:** [Dinesh67021@gmail.com](mailto:Dinesh67021@gmail.com)
 - **Phone:** [+91-8106625000](tel:+918106625000)

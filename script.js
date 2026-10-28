@@ -106,32 +106,89 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Resume Modal Handling
   const resumeModal = document.getElementById('resume-modal');
-  const openModalBtns = document.querySelectorAll('.open-resume-btn');
-  const closeModalBtn = document.getElementById('modal-close-btn');
+  const openResumeBtns = document.querySelectorAll('.open-resume-btn');
+  const closeResumeBtn = document.getElementById('modal-close-btn');
 
   if (resumeModal) {
-    openModalBtns.forEach(btn => {
+    openResumeBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
         resumeModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
       });
     });
 
-    if (closeModalBtn) {
-      closeModalBtn.addEventListener('click', () => {
+    if (closeResumeBtn) {
+      closeResumeBtn.addEventListener('click', () => {
         resumeModal.classList.remove('show');
+        document.body.style.overflow = '';
       });
     }
 
     resumeModal.addEventListener('click', (e) => {
       if (e.target === resumeModal) {
         resumeModal.classList.remove('show');
+        document.body.style.overflow = '';
       }
     });
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && resumeModal.classList.contains('show')) {
         resumeModal.classList.remove('show');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // Certificate Lightbox Modal Handling
+  const certModal = document.getElementById('certificate-modal');
+  const openCertBtns = document.querySelectorAll('.open-cert-modal');
+  const closeCertBtn = document.getElementById('cert-modal-close-btn');
+  const doneCertBtn = document.getElementById('cert-modal-done-btn');
+
+  function openCertificateModal(e) {
+    if (e) e.preventDefault();
+    if (certModal) {
+      certModal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeCertificateModal() {
+    if (certModal) {
+      certModal.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (certModal) {
+    openCertBtns.forEach(btn => {
+      btn.addEventListener('click', openCertificateModal);
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openCertificateModal(e);
+        }
+      });
+    });
+
+    if (closeCertBtn) {
+      closeCertBtn.addEventListener('click', closeCertificateModal);
+    }
+
+    if (doneCertBtn) {
+      doneCertBtn.addEventListener('click', closeCertificateModal);
+    }
+
+    certModal.addEventListener('click', (e) => {
+      if (e.target === certModal) {
+        closeCertificateModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && certModal.classList.contains('show')) {
+        closeCertificateModal();
       }
     });
   }
