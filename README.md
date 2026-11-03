@@ -50,9 +50,9 @@ Start-Process .\index.html
   - *Full Stack & Backend*
   - *API Automation & QA*
   - *AI & Deep Learning*
-- **Timeline Career History:** Detailed responsibilities and impact from industry internships (Fintech API Automation & Full-Stack Systems) with completed tenure dates (Apr 2026 – Oct 2026) and inline verified experience letter attachment.
+- **Timeline Career History:** Detailed responsibilities and impact from industry internships (Fintech API Automation & Full-Stack Systems) with completed tenure dates (Seamless: Apr 2026 – Oct 2026, A1 Logics: Aug 2023 – Sep 2023) and inline verified experience letter attachments.
 - **Certifications & Experience Letters Section:** Dedicated showcase for official corporate experience letters and degree credentials, featuring high-resolution preview cards, official company seal, and direct PDF downloads.
-- **Interactive Document Lightbox Modal:** Full-screen zoomable viewer displaying official documents (e.g. Seamless Private Limited Experience Certificate) with detailed metadata and download actions.
+- **Interactive Document Lightbox Modal:** Dynamic zoomable viewer displaying official credentials (Seamless Private Limited and A1 Logics Experience Letters) with detailed corporate metadata, high-resolution scans, and one-click PDF downloads.
 - **Categorized Technical Skills:** Tech badges grouped into 6 engineering disciplines with official vector logos and local icon assets.
 - **Interactive Resume Modal:** Allows recruiters to preview key resume highlights, verify attached experience letters, and initiate contact with a single click.
 - **Reliable SVG Icons:** Inline SVG glyphs for critical social links (GitHub, LinkedIn, Email, Phone) guaranteeing zero broken icons or font-loading tofu boxes (`□`).
@@ -86,6 +86,8 @@ Dinesh12-portfolio/
 │
 ├── seamless-internship-certificate.jpg  # High-res official experience certificate (Seamless)
 ├── seamless-internship-certificate.pdf  # Downloadable official experience certificate PDF
+├── a1logics-internship-certificate.jpg  # High-res official experience certificate (A1 Logics)
+├── a1logics-internship-certificate.pdf  # Downloadable official experience certificate PDF
 │
 ├── main.jpeg                            # Hero profile image
 ├── main1.jpeg                           # About section portrait image

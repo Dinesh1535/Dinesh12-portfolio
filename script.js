@@ -140,14 +140,84 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Certificate Lightbox Modal Handling
+  // Certificate Lightbox Modal Handling & Dynamic Data Switching
   const certModal = document.getElementById('certificate-modal');
   const openCertBtns = document.querySelectorAll('.open-cert-modal');
   const closeCertBtn = document.getElementById('cert-modal-close-btn');
   const doneCertBtn = document.getElementById('cert-modal-done-btn');
 
+  const certData = {
+    seamless: {
+      badge: '<i class="fa-solid fa-shield-halved"></i> Verified Experience Letter',
+      title: 'Seamless Private Limited — Internship Experience Letter',
+      subtitle: 'Issued on 13th October 2026 • Visvesvaraya Technological University Affiliate • Software Engineering Dept.',
+      imgSrc: 'seamless-internship-certificate.jpg',
+      imgAlt: 'Official Seamless Internship Experience Letter for Arencheruvu Dinesh',
+      details: [
+        { label: 'Issuing Organization', val: 'Seamless Private Limited' },
+        { label: 'CIN & Registration', val: 'U72900MH2010FTC206234' },
+        { label: 'Internship Tenure', val: '13th April 2026 – 12th October 2026' },
+        { label: 'Signatory & Seal', val: 'Suparna Debnath, HR Executive (Kolkata Seal)' }
+      ],
+      pdfUrl: 'seamless-internship-certificate.pdf',
+      pdfDownload: 'Arencheruvu_Dinesh_Seamless_Internship_Certificate.pdf',
+      imgUrl: 'seamless-internship-certificate.jpg'
+    },
+    a1logics: {
+      badge: '<i class="fa-solid fa-shield-halved"></i> Verified Experience Certificate',
+      title: 'A1 Logics — Software Development Internship Certificate',
+      subtitle: 'Issued on 26th September 2023 • Ref: TR-23/220 • Takshila, M.G Road, Mangaluru, Karnataka',
+      imgSrc: 'a1logics-internship-certificate.jpg',
+      imgAlt: 'Official A1 Logics Internship Certificate for Arencheruvu Dinesh',
+      details: [
+        { label: 'Issuing Organization', val: 'A1 Logics (Software & IT Solutions)' },
+        { label: 'Reference & USN', val: 'Ref: TR-23/220 • USN: 4MT20CS030' },
+        { label: 'Internship Tenure', val: 'August 2023 – September 2023' },
+        { label: 'Signatory & Seal', val: 'Prashanth Kalladka, HR Manager (Mangaluru Seal)' }
+      ],
+      pdfUrl: 'a1logics-internship-certificate.pdf',
+      pdfDownload: 'Arencheruvu_Dinesh_A1Logics_Internship_Certificate.pdf',
+      imgUrl: 'a1logics-internship-certificate.jpg'
+    }
+  };
+
+  const certBadgeElem = document.getElementById('cert-modal-badge');
+  const certTitleElem = document.getElementById('cert-modal-title');
+  const certSubtitleElem = document.getElementById('cert-modal-subtitle');
+  const certImgElem = document.getElementById('cert-modal-img');
+  const certDetailsBarElem = document.getElementById('cert-modal-details-bar');
+  const certPdfBtn = document.getElementById('cert-modal-pdf-btn');
+  const certImgBtn = document.getElementById('cert-modal-img-btn');
+
   function openCertificateModal(e) {
     if (e) e.preventDefault();
+    const trigger = e.currentTarget || (e.target && e.target.closest('.open-cert-modal'));
+    const certKey = (trigger && trigger.getAttribute('data-cert')) || 'seamless';
+    const data = certData[certKey] || certData['seamless'];
+
+    if (certBadgeElem) certBadgeElem.innerHTML = data.badge;
+    if (certTitleElem) certTitleElem.textContent = data.title;
+    if (certSubtitleElem) certSubtitleElem.textContent = data.subtitle;
+    if (certImgElem) {
+      certImgElem.src = data.imgSrc;
+      certImgElem.alt = data.imgAlt;
+    }
+    if (certDetailsBarElem) {
+      certDetailsBarElem.innerHTML = data.details.map(d => `
+        <div class="cert-detail-box">
+          <span class="detail-label">${d.label}</span>
+          <span class="detail-value">${d.val}</span>
+        </div>
+      `).join('');
+    }
+    if (certPdfBtn) {
+      certPdfBtn.href = data.pdfUrl;
+      certPdfBtn.setAttribute('download', data.pdfDownload);
+    }
+    if (certImgBtn) {
+      certImgBtn.href = data.imgUrl;
+    }
+
     if (certModal) {
       certModal.classList.add('show');
       document.body.style.overflow = 'hidden';
