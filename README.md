@@ -88,6 +88,8 @@ Dinesh12-portfolio/
 ├── seamless-internship-certificate.pdf  # Downloadable official experience certificate PDF
 ├── a1logics-internship-certificate.jpg  # High-res official experience certificate (A1 Logics)
 ├── a1logics-internship-certificate.pdf  # Downloadable official experience certificate PDF
+├── Arencheruvu_Dinesh_Resume.pdf        # Official verified software engineering resume (PDF)
+├── resume-preview.jpg                   # High-res visual preview of the verified resume
 │
 ├── main.jpeg                            # Hero profile image
 ├── main1.jpeg                           # About section portrait image
@@ -127,7 +129,7 @@ Dinesh12-portfolio/
 - **Email:** [Dinesh67021@gmail.com](mailto:Dinesh67021@gmail.com)
 - **Phone:** [+91-8106625000](tel:+918106625000)
 - **LinkedIn:** [linkedin.com](https://linkedin.com)
-- **GitHub:** [github.com](https://github.com)
+- **GitHub:** [github.com/Dinesh1535](https://github.com/Dinesh1535)
 
 ---
 

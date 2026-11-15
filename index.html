@@ -106,8 +106,11 @@
         <a href="#projects" class="btn-primary">
           <i class="fa-solid fa-code"></i> View Projects
         </a>
-        <button class="btn-secondary open-resume-btn">
-          <i class="fa-solid fa-file-pdf"></i> View Resume
+        <a href="Arencheruvu_Dinesh_Resume.pdf" target="_blank" download="Arencheruvu_Dinesh_Resume.pdf" class="btn-secondary" title="Download Official Resume PDF">
+          <i class="fa-solid fa-file-pdf"></i> Download Resume
+        </a>
+        <button class="btn-ghost open-resume-btn" title="Open Interactive Resume Viewer">
+          <i class="fa-solid fa-eye"></i> View Resume
         </button>
         <a href="#contact" class="btn-ghost">
           <i class="fa-solid fa-paper-plane"></i> Let's Talk
@@ -126,7 +129,7 @@
         </a>
 
         <!-- GitHub -->
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"
+        <a href="https://github.com/Dinesh1535" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"
           aria-label="GitHub">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
             <path
@@ -999,53 +1002,67 @@
 
   <!-- Interactive Resume Modal -->
   <div id="resume-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="resume-title">
-    <div class="modal-content">
+    <div class="modal-content resume-modal-content">
       <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
       <div class="modal-header">
-        <h3 id="resume-title">Arencheruvu Dinesh — Resume</h3>
-        <p>Bangalore, India | +91-8106625000 | Dinesh67021@gmail.com</p>
+        <div class="cert-modal-badge" style="background: rgba(14, 165, 233, 0.12); color: #38bdf8; border-color: rgba(14, 165, 233, 0.35); margin-bottom: 0.8rem;">
+          <i class="fa-solid fa-file-pdf"></i> Official Verified Resume • Updated 2026
+        </div>
+        <h3 id="resume-title">Arencheruvu Dinesh — Software Engineer</h3>
+        <p>+91-8106625000 | <a href="mailto:Dinesh67021@gmail.com" style="color: var(--accent-coral);">Dinesh67021@gmail.com</a> | <a href="https://github.com/Dinesh1535" target="_blank" style="color: #a5b4fc;"><i class="fa-brands fa-github"></i> github.com/Dinesh1535</a></p>
       </div>
+
+      <!-- Quick Action Buttons at Top -->
+      <div class="resume-quick-actions">
+        <a href="Arencheruvu_Dinesh_Resume.pdf" target="_blank" download="Arencheruvu_Dinesh_Resume.pdf" class="btn-primary">
+          <i class="fa-solid fa-download"></i> Download Resume (PDF)
+        </a>
+        <a href="Arencheruvu_Dinesh_Resume.pdf" target="_blank" class="btn-secondary">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Full PDF
+        </a>
+      </div>
+
+      <!-- High-Resolution Document Preview -->
+      <a href="Arencheruvu_Dinesh_Resume.pdf" target="_blank" class="resume-preview-wrapper" title="Click to open full high-resolution PDF">
+        <img src="resume-preview.jpg" alt="Official Resume - Arencheruvu Dinesh" class="resume-preview-img">
+        <div class="resume-preview-hover">
+          <span><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Open High-Resolution PDF</span>
+        </div>
+      </a>
 
       <div class="resume-summary-box">
         <h4>Professional Summary</h4>
         <p style="font-size: 1.35rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1.4rem;">
-          Software Engineer with hands-on experience building and validating REST API-driven backend features using
-          Java, Python, and SQL, plus front-end development experience. Skilled in object-oriented programming, database
-          design and validation, Git-based version control, and debugging across the development lifecycle.
+          Software Engineer with a B.E. in Computer Science & Engineering (M.Tech in progress) and two internships. Builds and
+          tests web applications and REST services in Java, Python, JavaScript and SQL, including a full-stack Python/SQLite app
+          and a 40+ test API suite across 20+ endpoints. Strong in OOP, web services, debugging and Git code-review workflows;
+          eager to build scalable payments software.
         </p>
 
-        <h4>Key Highlights</h4>
+        <h4>Core Highlights & Experience</h4>
         <ul>
-          <li><strong>Internship Experience:</strong> Software Engineer Intern at Seamless Private Limited (Apr 2026 –
-            Oct 2026) — <button type="button" class="inline-cert-trigger open-cert-modal" data-cert="seamless"><i
-                class="fa-solid fa-certificate"></i> Verified Experience Letter Attached</button></li>
-          <li><strong>Shipped Suite:</strong> 40+ REST API test cases across 20+ endpoints with Java, TestNG, Rest
-            Assured, Maven (~50% manual effort saved)</li>
-          <li><strong>Previous Internship:</strong> Software Developer Intern at A1 Logics (Aug 2023 – Sep 2023) — <button type="button" class="inline-cert-trigger open-cert-modal" data-cert="a1logics"><i class="fa-solid fa-certificate"></i> Verified Experience Letter Attached</button></li>
-          <li><strong>Featured Projects:</strong> Personal Expense Tracker & Analytics Platform (FastAPI/SQLite/JS),
-            REST API Automation Framework (Java/TestNG), Hybrid Deep Learning Detection (CNN)</li>
-          <li><strong>Academics:</strong> Master of Technology (M.Tech) in Computer Science & Engineering at JNTUA Anantapur (Joined Oct 2026, Pursuing) • Bachelor of Engineering in CSE (CGPA: 6.88)</li>
+          <li><strong>Software Engineer Intern at Seamless Distribution Systems (13 Apr 2026 – 12 Oct 2026):</strong> Built a Java REST API test suite (TestNG, Rest Assured, Maven) with 40+ test cases across 20+ endpoints (~50% manual effort saved); validated backend REST JSON payloads; verified SQL database integrity. — <button type="button" class="inline-cert-trigger open-cert-modal" data-cert="seamless"><i class="fa-solid fa-certificate"></i> View Letter</button></li>
+          <li><strong>Software Developer Intern at A1 Logics (Aug 2023 – Sep 2023):</strong> Developed HTML5/CSS3/JavaScript front-end and SQL database features for Student Management System, applying structured SDLC practices. — <button type="button" class="inline-cert-trigger open-cert-modal" data-cert="a1logics"><i class="fa-solid fa-certificate"></i> View Letter</button></li>
+          <li><strong>Personal Expense Tracker & Analytics Platform:</strong> Full-stack Python/FastAPI, SQLite, JavaScript, HTML5/CSS3 with dual-mode persistence and RFC-4180 standard CSV import/export workflows.</li>
+          <li><strong>REST API Automation Framework:</strong> Reusable, data-driven Java/TestNG/Rest Assured test automation framework with SQL-based backend validation.</li>
+          <li><strong>Technical Skills:</strong> Java, Python, JavaScript, SQL, HTML5/CSS3, REST APIs, TestNG, Rest Assured, MySQL, SQLite, Git, Maven, Postman, Jira, IntelliJ IDEA, VS Code.</li>
+          <li><strong>Academics:</strong> M.Tech in Computer Science & Engineering (JNTUA Anantapur, 2026 – Present, Ongoing) • B.E. in CSE (MITE, 2020 – 2024, CGPA: 6.88).</li>
         </ul>
       </div>
 
       <div class="modal-actions">
-        <button type="button" class="btn-primary open-cert-modal" data-cert="seamless">
+        <a href="Arencheruvu_Dinesh_Resume.pdf" target="_blank" download="Arencheruvu_Dinesh_Resume.pdf" class="btn-primary">
+          <i class="fa-solid fa-download"></i> Download Resume (PDF)
+        </a>
+        <button type="button" class="btn-secondary open-cert-modal" data-cert="seamless">
           <i class="fa-solid fa-stamp"></i> View Seamless Letter
         </button>
-        <button type="button" class="btn-primary open-cert-modal" data-cert="a1logics" style="background: linear-gradient(135deg, #0ea5e9, #2563eb);">
+        <button type="button" class="btn-secondary open-cert-modal" data-cert="a1logics" style="background: linear-gradient(135deg, #0ea5e9, #2563eb);">
           <i class="fa-solid fa-stamp"></i> View A1 Logics Letter
         </button>
-        <a href="seamless-internship-certificate.pdf" target="_blank"
-          download="Arencheruvu_Dinesh_Seamless_Internship_Certificate.pdf" class="btn-secondary">
-          <i class="fa-solid fa-file-pdf"></i> Download Seamless PDF
-        </a>
-        <a href="a1logics-internship-certificate.pdf" target="_blank"
-          download="Arencheruvu_Dinesh_A1Logics_Internship_Certificate.pdf" class="btn-secondary">
-          <i class="fa-solid fa-file-pdf"></i> Download A1 Logics PDF
-        </a>
-        <a href="mailto:Dinesh67021@gmail.com?subject=Requesting%20Resume%20PDF%20-%20Arencheruvu%20Dinesh"
+        <a href="mailto:Dinesh67021@gmail.com?subject=Contact%20Regarding%20Software%20Engineer%20Role%20-%20Arencheruvu%20Dinesh"
           class="btn-ghost">
-          <i class="fa-solid fa-envelope"></i> Request Resume PDF
+          <i class="fa-solid fa-envelope"></i> Contact Dinesh
         </a>
       </div>
     </div>
