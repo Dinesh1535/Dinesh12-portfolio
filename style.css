@@ -1373,6 +1373,12 @@ section {
   align-self: flex-start;
 }
 
+.edu-year-badge.active-edu {
+  background: rgba(16, 185, 129, 0.14);
+  border-color: rgba(16, 185, 129, 0.38);
+  color: #34d399;
+}
+
 .edu-degree {
   font-size: 1.9rem;
   font-weight: 700;

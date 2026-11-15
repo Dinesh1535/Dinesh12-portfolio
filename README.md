@@ -123,7 +123,7 @@ Dinesh12-portfolio/
 
 - **Role:** Software Engineer (REST APIs, Backend & Automation)
 - **Location:** Bangalore, India *(Hometown: Anantapur,Andhra Pradesh)*
-- **Education:** Bachelor of Engineering in Computer Science & Engineering (Mangalore Institute of Technology & Engineering, 2020 – 2024, CGPA: 6.88)
+- **Education:** Master of Technology (M.Tech) in Computer Science & Engineering (JNTUA Anantapur, Oct 2026 – Present, Pursuing) • Bachelor of Engineering in CSE (Mangalore Institute of Technology & Engineering, 2020 – 2024, CGPA: 6.88)
 - **Email:** [Dinesh67021@gmail.com](mailto:Dinesh67021@gmail.com)
 - **Phone:** [+91-8106625000](tel:+918106625000)
 - **LinkedIn:** [linkedin.com](https://linkedin.com)
